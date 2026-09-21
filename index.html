@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de Tasa de Interés en línea para calcular intereses de forma rápida y sencilla.">
+    <title>Calculadora de Tasa de Interés - Paradise Nursery</title>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2021/01/22/13/54/snake-plant-5940209_1280.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculadora de Tasa de Interés</h1>
+        <form id="interestForm">
+            <label for="principal">Monto Principal:</label>
+            <input type="number" id="principal" required>
+
+            <label for="rate">Tasa de Interés (%):</label>
+            <input type="number" id="rate" step="any" required>
+
+            <label for="years">Años:</label>
+            <input type="number" id="years" required>
+
+            <button type="button" id="calculateBtn" onclick="calculateInterest()">Calcular</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
