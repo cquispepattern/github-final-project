@@ -1,0 +1,19 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: tax-calculator-pipeline
+spec:
+  tasks:
+    - name: install
+      taskRef:
+        name: npm-task
+    - name: test
+      taskRef:
+        name: jasmine-task
+      runAfter:
+        - install
+    - name: build
+      taskRef:
+        name: npm-task
+      runAfter:
+        - test
