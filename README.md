@@ -13,3 +13,5 @@ El cálculo se basa en la siguiente fórmula:
 
 ## Uso
 Para ejecutar la calculadora, simplemente corre el script en tu terminal y sigue las instrucciones en pantalla para ingresar el capital, la tasa y el tiempo.
+
+A calculator that computes simple interest given principal, annual rate of interest and time period in years.
