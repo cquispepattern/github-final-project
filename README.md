@@ -1,9 +1,11 @@
-# Paradise Nursery Shopping Application
+# StayHealthy - Medical Appointment Booking
 
-An e-commerce web application built with React, Redux, and Vite for purchasing houseplants. 
+## Descripción
+StayHealthy es una plataforma de salud digital que permite a los pacientes conectarse con médicos, buscar especialistas y reservar citas médicas fácilmente.
 
-## Features
-- Landing page with company background and navigation.
-- Product listing categorized by plant types with "Add to Cart" functionality.
-- Interactive Shopping Cart to update quantities, remove items, and calculate totals.
-- Responsive design styled using modern CSS.
+## Instrucciones de configuración (Setup)
+1. Clona este repositorio: `git clone <tu-url-del-repositorio>`
+2. Navega al directorio del proyecto: `cd github-final-project`
+3. Instala las dependencias: `npm install`
+4. Inicia el servidor de desarrollo: `npm start`
+5. Para compilar a producción: `npm run build`
