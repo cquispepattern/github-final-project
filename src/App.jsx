@@ -1,33 +1,19 @@
-import React, { useState } from 'react';
-import './App.css';
-import ProductList from './ProductList';
-import AboutUs from './AboutUs';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Notification from './components/Notification/Notification'; // Componente de notificación
+// Importa tus otras rutas aquí...
 
 function App() {
-  const [showProductList, setShowProductList] = useState(false);
-
-  const handleGetStartedClick = () => {
-    setShowProductList(true);
-  };
-
   return (
-    <div className="app-container">
-      {!showProductList ? (
-        <div className="landing-page">
-          <div className="landing-content">
-            <h1>Paradise Nursery</h1>
-            <p>Where Green Meets Serenity</p>
-            <AboutUs />
-            <button className="get-started-btn" onClick={handleGetStartedClick}>
-              Comenzar
-            </button>
-          </div>
-        </div>
-      ) : (
-        <ProductList />
-      )}
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Notification /> {/* Integrado para visibilidad en toda la aplicación */}
+      <Routes>
+        <Route path="/" element={<div>Página de inicio</div>} />
+        {/* Añade el resto de tus rutas (Login, SignUp, etc.) */}
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
